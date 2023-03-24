@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>Jquery pagina</title>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("p").hide();
+            });
+            $(document).ready(function(){
+                $("#knop").click(function(){
+                    $("p").fadeToggle();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="knop">Klik mij</button>
+        <p>Peekaboo</p>
+        <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+    </body>
+</html>
